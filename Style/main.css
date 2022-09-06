@@ -52,6 +52,32 @@ table {
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1690px;
     padding: 0 15px;
+}
+
+/*Personal Styles*/
+
+.container_Header {
+
+}
+
+/*
+.container_Header .container_logo img{
+  max-height: 10px;
+}
+
+.container_Header .container_partner img{
+  max-height: 9px;
+}
+*/
+
+.container_Header .container_logo {
+  width: 50%;
+  display: inline-block;
+}
+
+.container_Header .container_partner {
+  width: 50%;
+  display: inline-block;
 }
