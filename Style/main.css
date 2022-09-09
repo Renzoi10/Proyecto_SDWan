@@ -50,7 +50,7 @@ table {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 2600px;
   padding: 0px 15px;
 }
 
@@ -96,6 +96,7 @@ table {
   width: 100%;
   vertical-align: middle;
   margin-top: 15px;
+  
 }
 
 .container_Header .content_header .container_icons .container_logo {
@@ -105,6 +106,8 @@ table {
 
 .container_Header .content_header .container_icons .container_logo img{
   height: 54px;
+  padding-left: 25px;
+  
 }
 
 .container_Header .content_header .container_partners {
@@ -112,111 +115,531 @@ table {
   width: 50%;
   display: inline-block;
   text-align: end;
-
+  
 }
 
 .container_Header .content_header .container_partners .container_partner1 {
   width: 70%;
   display: inline-block;
-
+  
 }
 
 .container_Header .content_header .container_partners .container_partner2 {
   width: 30%;
   display: inline-block;
+
 }
+
+.container_Header .content_header .container_partners .container_partner2 img{
+  
+  margin-right: 25px;
+
+}
+
 
 /*Section Slider*/
 
-.Section_slider{
 
+.Hero-slider {
   font-size: 0px;
-  padding: 15px 0px;
-
 }
 
-.Section_slider .Container_slider {
-
-  
-  padding: 0px ;
-
+.Hero-slider .Hero-slider-container {
+  padding: 0px;
+  margin-top: 20px;
 }
 
-.Section_slider .Container_slider .Content_slider {
-
-  position: relative;
-
-}
-
-.Section_slider .Container_slider .Content_slider .Container_img img{
-
+.Hero-slider .Hero-slider-container .container-img img {
   width: 100%;
   background-size: auto;
-  object-fit: cover;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
 }
+  
 
-.Section_slider .Container_slider .Content_slider .Container_slidertext {
+.Hero-slider .Hero-slider-container  .Container_slidertext p{
 
-  font-size: 0;
+  font-size: 26px;
+  font-family: 'Telefonica-Bold', sans-serif;
   text-align: center;
   position: absolute;
-  width: 100%;
-  bottom: 48%;
-  left: 14%;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+  font-weight: 400;
 
 }
 
-.Section_slider .Container_slider .Content_slider .Container_slidertext p{
+.Hero-slider .Hero-slider-container .container_spaceBarr{
 
-  color: #fff;
-  font-size: 26px;
-  font-weight: normal;
-  font-family: Telefonica-Bold,sans-serif;
-
-}
-
-.Section_slider .Container_slider .container_spaceBarr{
-
-  background-color: #00a9e1;
+  background-color: #00B5f0;
   padding-bottom: 10px;
   
 }
 
-.Section_slider .Container_slider .Container_text {
+.Hero-slider .Hero-slider-container .Container_text {
 
   text-align: start;
   vertical-align: middle;
   align-content: center;
   max-width: 946px;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 20px;
   
 }
 
-.Section_slider .Container_slider .Container_text p{
+.Hero-slider .Hero-slider-container .Container_text p{
 
-
-  color: #00a9e1;
+  color: #00B5f0;
   font-size: 26px;
   font-weight: normal;
   font-family: Telefonica-Light,sans-serif;
 
+} 
+
+
+/*Section Benefits*/
+
+.Section_benefitsInfo{
+
+  font-size: 0;
+  margin: 0px auto;
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 0px;
+
+}
+
+.Section_benefitsInfo .container_Info{
+
+
+
+}
+
+.Section_benefitsInfo .container_Info .container_tittle{
+
+  color: #00B5f0;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: 'Telefonica-Light',sans-serif;
+  margin: 20px 0px;
+  display: inline-block;
+  width: 80%;
+  text-align: start;
+
+}
+
+
+.Section_benefitsInfo .container_Info .info_content{
+
+  margin: 15px 0px;
+  display: inline-block;
+}
+
+.Section_benefitsInfo .container_Info .info_content img{
+
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.Section_benefitsInfo .container_Info .info_content .content-infotxt{
+
+  font-size: 19px;
+  display: inline-block;
+  margin-left: 22px;
+  vertical-align: middle;
+  max-width: 780px;
+  text-align: start;
+
+}
+
+
+.Section_benefitsInfo .container_Info .info_content .content-infotxt h5{
+
+  font-size: 25px;
+  font-family: Telefonica-Regular,sans-serif;
+  margin-bottom: 8px;
+  color: #00B5f0;
+}
+
+
+.Section_benefitsInfo .container_Info .info_content .content-infotxt p{
+
+  font-family: Telefonica-Light, sans-serif;
+  font-weight: 400;
+
+}
+
+
+/*Styles advantajes*/
+
+
+.Section_advantage {
+
+  font-size: 0;
+  margin: 0px auto;
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 0px;
+
+}
+
+
+.Section_advantage .container_advantage {
+
+  padding: 0 80px;
+  
+
+}
+
+.Section_advantage .container_advantage h4{
+
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Telefonica-Regular,sans-serif;
+  padding-bottom: 15px;
+  color: #00B5f0;
+  line-height: 1.1 !important;
+  
+}
+
+.Section_advantage .container_advantage p{
+
+  font-size: 19px;
+  font-family: Telefonica-Light, sans-serif;
+  margin: 8px 0px;
+
+}
+
+.Section_advantage .container_advantage img{
+
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  
+}
+
+/*Section useles
+
+.Section_uses
+.uses_container
+.container_usesInfo   .container_accordion
+h4                    .accordion
+p                     .accordion-item>h2>button
+                      .accordion-collapse
+                      .accordion-body>p
+
+
+
+
+*/
+
+.Section_uses{
+
+  font-size: 0;
+  margin: 0px auto;
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 0px;
+
+}
+
+
+.Section_uses .uses_container{
+
+  padding: 0 50px;
+
+}
+
+.Section_uses .uses_container .container_usesInfo {
+  padding: 8px 0px;
+
+}
+
+.Section_uses .uses_container .container_usesInfo h4{
+
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Telefonica-Regular,sans-serif;
+  padding-bottom: 15px;
+  color: #00B5f0;
+  line-height: 1.1 !important;
+
+}
+
+.Section_uses .uses_container .container_usesInfo p{
+
+  font-size: 19px;
+  font-family: Telefonica-Light, sans-serif;
+  padding: 8px 0px;
+  text-align: start;
+
+}
+
+.Section_uses .uses_container .container_accordion{
+
+  margin: 25px auto;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header button{
+
+  font-family: Telefonica-Regular,sans-serif;
+  font-size: 20px;
+  vertical-align: top;
+  color: #AFB6C9;
+  transition: 0.8s;
+
+}
+
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item button:hover{
+
+  background-color: #00B5f0;
+  color: white;
+
+}
+
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item button i{
+
+  margin: 0px 8px;
+  
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-button::after {
+
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse{
+
+  font-size: 19px;
+  font-family: Telefonica-Light, sans-serif;
+
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse p{
+
+  text-align: left;
+  
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul{
+
+  text-align: left;
+  padding: 20px;
+  list-style-type: disc;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul li{
+
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 20px 0;
+
 }
 
 
 
 
+/*Section Contact
+
+  .section_contactUs
+  .container_contactUs
+  .text_contactUs             .container_infoUs
+  h4                          .container_cardItem>img>p
+  p
+
+*/
 
 
+.section_contactUs{
+
+  font-size: 0;
+  margin: 0px auto;
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 0px;
+
+}
+
+.section_contactUs .container_contactUs{
+
+  padding: 20px 80px;
+
+}
+
+.section_contactUs .container_contactUs .text_contactUs{
+
+  text-align: center;
+
+}
+
+.section_contactUs .container_contactUs .text_contactUs h4{
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.1 !important;
+  font-family: Telefonica-Regular, sans-serif;
+  margin: 16px 0 !important;
+  padding-bottom: 15px;
+  color: #00B5f0;
 
 
+}
+
+.section_contactUs .container_contactUs .text_contactUs p{
+
+  font-family: Telefonica-Regular,sans-serif;
+  font-size: 20px;
+  vertical-align: top;
+  transition: 0.8s;
+  text-align: justify;
 
 
+}
+
+.section_contactUs .container_contactUs .container_infoUs{
+
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0px;
+
+}
+
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem{
+
+  display: inline-block;
+  width: 25%;
+  margin: 20px 0;
+  vertical-align: top;
+
+}
+
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem img{
+
+  width: 90%;
+  max-width: 80px!important;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+}
 
 
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem p{
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1 !important;
+  font-family: Telefonica-Regular, sans-serif;
+  margin: 16px auto !important;
+  padding-bottom: 15px;
+  color: #019DF4;
+  max-width: 230px !important;
+}
 
 
+/*Section Footer
 
+  .section-footer
+  .container_footer
+  .container_txtFooter      .container_contactFooter
+  h3                        .contact_button
+  p                         i
 
+*/
+
+.section-footer{
+
+  font-size: 0px;
+  background-color: #414C62;
+
+}
+
+.section-footer .container_footer{
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.section-footer .container_footer .container_txtFooter{
+
+  display: inline-block;
+  width: 50%;
+  color: white;
+
+}
+
+.section-footer .container_footer .container_contactFooter{
+
+  display: inline-block;
+  width: 50%;
+  text-align: end;
+  font-family: 'Telefonica-Regular', sans-serif;
+  font-size: 24px;
+
+}
+
+.section-footer .container_footer .container_txtFooter h3{
+
+  font-size: 24px;
+  text-align: left;
+  margin: 10px 0 0!important;
+  font-family: 'Telefonica-ExtraLight';
+  font-weight: 400;
+  line-height: 1.1 !important;
+
+}
+
+.section-footer .container_footer .container_txtFooter p{
+
+  font-size: 15px;
+  text-align: left;
+  margin: 10px 0 0!important;
+  font-family: Telefonica-ExtraLight,sans-serif;
+
+}
+
+.section-footer .container_footer .container_contactFooter .contact_button{
+
+  color: #FFFF;
+  font-family: 'Telefonica-Regular', sans-serif;
+  display: inline-block;
+  width: 50%;
+
+}
+
+.section-footer .container_footer .container_contactFooter i{
+
+  color: white;
+  display: inline-block;
+  width: 50%;
+
+}
 
