@@ -245,10 +245,19 @@ margin-top: 15px;
 }
 
 .container_banner .wrap .box p{
-	font-size: 25px;
+
+  font-size: 45px;
   font-family: 'Telefonica-Bold',sans-serif;
   color: white;
 
+}
+
+@media (max-width: 2200px) {
+  
+  .container_banner .wrap .box p{
+    font-size: 25px;
+
+  }
 }
 
 
@@ -462,6 +471,26 @@ margin-top: 15px;
   vertical-align: top;
   color: #AFB6C9;
   transition: 0.8s;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header button::after {
+
+  background-image: none;
+  content: none;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header .accordion-button .container_svgIcon svg{
+
+  width: 20px;
+  color: #AFB6C9;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header .accordion-button .container_svgIcon path{
+
+  fill: #AFB6C9;
 
 }
 
