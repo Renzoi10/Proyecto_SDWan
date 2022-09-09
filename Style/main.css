@@ -19,8 +19,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +38,20 @@ body {
   font-family: DINPro, Helvetica, Arial, Sans-Serif;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -83,30 +96,53 @@ table {
 
 .container_Header {
   font-size: 0px;
-  
+
 }
 
-.container_Header .content_header{
+.container_Header .content_header {
   width: 100%;
   padding: 0px;
 }
 
 .container_Header .content_header .container_icons {
-  display: inline-block;
-  width: 100%;
+  width: 90%;
   vertical-align: middle;
-  margin-top: 15px;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+
+}
+
+@media (max-width: 1200px) {
+  
+  .container_Header .content_header .container_icons {
+
+    width: 90%;
+    margin-top:15px;
+
+  }
   
 }
 
 .container_Header .content_header .container_icons .container_logo {
   width: 50%;
   display: inline-block;
+  text-align: start;
 }
 
-.container_Header .content_header .container_icons .container_logo img{
+.container_Header .content_header .container_icons .container_logo img {
+  
   height: 54px;
-  padding-left: 25px;
+
+}
+
+@media (max-width: 1200px) {
+  
+  .container_Header .content_header .container_icons .container_logo img {
+    
+    height: 40px;
+
+  }
   
 }
 
@@ -115,12 +151,22 @@ table {
   width: 50%;
   display: inline-block;
   text-align: end;
-  
+
 }
 
 .container_Header .content_header .container_partners .container_partner1 {
   width: 70%;
   display: inline-block;
+
+}
+
+@media (max-width: 1200px) {
+  
+  .container_Header .content_header .container_partners .container_partner1 img {
+
+    height: 20px;
+  
+  }
   
 }
 
@@ -130,10 +176,20 @@ table {
 
 }
 
-.container_Header .content_header .container_partners .container_partner2 img{
-  
-  margin-right: 25px;
+.container_Header .content_header .container_partners .container_partner2 img {
 
+margin-top: 15px;
+
+}
+
+@media (max-width: 1200px) {
+  
+  .container_Header .content_header .container_partners .container_partner2 img {
+
+    height: 40px;
+  
+  }
+  
 }
 
 
@@ -146,40 +202,61 @@ table {
 
 .Hero-slider .Hero-slider-container {
   padding: 0px;
-  margin-top: 20px;
-}
-
-.Hero-slider .Hero-slider-container .container-img img {
-  width: 100%;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  opacity: 0.9;
-}
   
+}
 
-.Hero-slider .Hero-slider-container  .Container_slidertext p{
+.container_banner{
+	display: flex;
+  margin-top: 20px;
+	height: 60vh;
+	background-image: url(../img/img_slider.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+}
 
-  font-size: 26px;
-  font-family: 'Telefonica-Bold', sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  color: white;
-  display: block;
-  font-weight: 400;
+@media (max-width: 1200px) {
+  
+  .container_banner{
+
+    height: 38vh;
+
+  }
+}
+
+
+.container_banner .wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
 
 }
 
-.Hero-slider .Hero-slider-container .container_spaceBarr{
+.container_banner .wrap .box{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 1150px;
+	
+}
+
+.container_banner .wrap .box p{
+	font-size: 25px;
+  font-family: 'Telefonica-Bold',sans-serif;
+  color: white;
+
+}
+
+
+.Hero-slider .Hero-slider-container .container_spaceBarr {
 
   background-color: #00B5f0;
   padding-bottom: 10px;
-  
+
 }
 
 .Hero-slider .Hero-slider-container .Container_text {
@@ -191,22 +268,22 @@ table {
   margin: auto;
   padding-top: 14px;
   padding-bottom: 20px;
-  
+
 }
 
-.Hero-slider .Hero-slider-container .Container_text p{
+.Hero-slider .Hero-slider-container .Container_text p {
 
   color: #00B5f0;
   font-size: 26px;
   font-weight: normal;
-  font-family: Telefonica-Light,sans-serif;
+  font-family: Telefonica-Light, sans-serif;
 
-} 
+}
 
 
 /*Section Benefits*/
 
-.Section_benefitsInfo{
+.Section_benefitsInfo {
 
   font-size: 0;
   margin: 0px auto;
@@ -218,18 +295,12 @@ table {
 
 }
 
-.Section_benefitsInfo .container_Info{
-
-
-
-}
-
-.Section_benefitsInfo .container_Info .container_tittle{
+.Section_benefitsInfo .container_Info .container_tittle {
 
   color: #00B5f0;
   font-size: 26px;
   font-weight: normal;
-  font-family: 'Telefonica-Light',sans-serif;
+  font-family: 'Telefonica-Light', sans-serif;
   margin: 20px 0px;
   display: inline-block;
   width: 80%;
@@ -238,20 +309,20 @@ table {
 }
 
 
-.Section_benefitsInfo .container_Info .info_content{
+.Section_benefitsInfo .container_Info .info_content {
 
   margin: 15px 0px;
   display: inline-block;
 }
 
-.Section_benefitsInfo .container_Info .info_content img{
+.Section_benefitsInfo .container_Info .info_content img {
 
   width: 60px;
   height: 60px;
   vertical-align: middle;
 }
 
-.Section_benefitsInfo .container_Info .info_content .content-infotxt{
+.Section_benefitsInfo .container_Info .info_content .content-infotxt {
 
   font-size: 19px;
   display: inline-block;
@@ -263,16 +334,16 @@ table {
 }
 
 
-.Section_benefitsInfo .container_Info .info_content .content-infotxt h5{
+.Section_benefitsInfo .container_Info .info_content .content-infotxt h5 {
 
   font-size: 25px;
-  font-family: Telefonica-Regular,sans-serif;
+  font-family: Telefonica-Regular, sans-serif;
   margin-bottom: 8px;
   color: #00B5f0;
 }
 
 
-.Section_benefitsInfo .container_Info .info_content .content-infotxt p{
+.Section_benefitsInfo .container_Info .info_content .content-infotxt p {
 
   font-family: Telefonica-Light, sans-serif;
   font-weight: 400;
@@ -299,22 +370,22 @@ table {
 .Section_advantage .container_advantage {
 
   padding: 0 80px;
-  
+
 
 }
 
-.Section_advantage .container_advantage h4{
+.Section_advantage .container_advantage h4 {
 
   font-size: 25px;
   font-weight: 400;
-  font-family: Telefonica-Regular,sans-serif;
+  font-family: Telefonica-Regular, sans-serif;
   padding-bottom: 15px;
   color: #00B5f0;
   line-height: 1.1 !important;
-  
+
 }
 
-.Section_advantage .container_advantage p{
+.Section_advantage .container_advantage p {
 
   font-size: 19px;
   font-family: Telefonica-Light, sans-serif;
@@ -322,32 +393,19 @@ table {
 
 }
 
-.Section_advantage .container_advantage img{
+.Section_advantage .container_advantage img {
 
   width: 100%;
   max-width: 1100px;
   height: auto;
   display: block;
   margin: 20px auto;
-  
+
 }
 
-/*Section useles
+/*Section useles*/
 
-.Section_uses
-.uses_container
-.container_usesInfo   .container_accordion
-h4                    .accordion
-p                     .accordion-item>h2>button
-                      .accordion-collapse
-                      .accordion-body>p
-
-
-
-
-*/
-
-.Section_uses{
+.Section_uses {
 
   font-size: 0;
   margin: 0px auto;
@@ -360,7 +418,7 @@ p                     .accordion-item>h2>button
 }
 
 
-.Section_uses .uses_container{
+.Section_uses .uses_container {
 
   padding: 0 50px;
 
@@ -371,18 +429,18 @@ p                     .accordion-item>h2>button
 
 }
 
-.Section_uses .uses_container .container_usesInfo h4{
+.Section_uses .uses_container .container_usesInfo h4 {
 
   font-size: 25px;
   font-weight: 400;
-  font-family: Telefonica-Regular,sans-serif;
+  font-family: Telefonica-Regular, sans-serif;
   padding-bottom: 15px;
   color: #00B5f0;
   line-height: 1.1 !important;
 
 }
 
-.Section_uses .uses_container .container_usesInfo p{
+.Section_uses .uses_container .container_usesInfo p {
 
   font-size: 19px;
   font-family: Telefonica-Light, sans-serif;
@@ -391,15 +449,15 @@ p                     .accordion-item>h2>button
 
 }
 
-.Section_uses .uses_container .container_accordion{
+.Section_uses .uses_container .container_accordion {
 
   margin: 25px auto;
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header button{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-header button {
 
-  font-family: Telefonica-Regular,sans-serif;
+  font-family: Telefonica-Regular, sans-serif;
   font-size: 20px;
   vertical-align: top;
   color: #AFB6C9;
@@ -408,7 +466,7 @@ p                     .accordion-item>h2>button
 }
 
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item button:hover{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item button:hover {
 
   background-color: #00B5f0;
   color: white;
@@ -416,19 +474,16 @@ p                     .accordion-item>h2>button
 }
 
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item button i{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item button i {
 
   margin: 0px 8px;
-  
-
-}
-
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-button::after {
 
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse{
+
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse {
 
   font-size: 19px;
   font-family: Telefonica-Light, sans-serif;
@@ -436,14 +491,14 @@ p                     .accordion-item>h2>button
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse p{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse p {
 
   text-align: left;
-  
+
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul {
 
   text-align: left;
   padding: 20px;
@@ -451,7 +506,7 @@ p                     .accordion-item>h2>button
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul li{
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul li {
 
   font-size: 15px;
   line-height: 1.3;
@@ -462,18 +517,10 @@ p                     .accordion-item>h2>button
 
 
 
-/*Section Contact
-
-  .section_contactUs
-  .container_contactUs
-  .text_contactUs             .container_infoUs
-  h4                          .container_cardItem>img>p
-  p
-
-*/
+/*Section Contact*/
 
 
-.section_contactUs{
+.section_contactUs {
 
   font-size: 0;
   margin: 0px auto;
@@ -485,19 +532,19 @@ p                     .accordion-item>h2>button
 
 }
 
-.section_contactUs .container_contactUs{
+.section_contactUs .container_contactUs {
 
   padding: 20px 80px;
 
 }
 
-.section_contactUs .container_contactUs .text_contactUs{
+.section_contactUs .container_contactUs .text_contactUs {
 
   text-align: center;
 
 }
 
-.section_contactUs .container_contactUs .text_contactUs h4{
+.section_contactUs .container_contactUs .text_contactUs h4 {
 
   font-size: 25px;
   font-weight: 400;
@@ -510,9 +557,9 @@ p                     .accordion-item>h2>button
 
 }
 
-.section_contactUs .container_contactUs .text_contactUs p{
+.section_contactUs .container_contactUs .text_contactUs p {
 
-  font-family: Telefonica-Regular,sans-serif;
+  font-family: Telefonica-Regular, sans-serif;
   font-size: 20px;
   vertical-align: top;
   transition: 0.8s;
@@ -521,7 +568,7 @@ p                     .accordion-item>h2>button
 
 }
 
-.section_contactUs .container_contactUs .container_infoUs{
+.section_contactUs .container_contactUs .container_infoUs {
 
   display: inline-block;
   width: 100%;
@@ -529,7 +576,7 @@ p                     .accordion-item>h2>button
 
 }
 
-.section_contactUs .container_contactUs .container_infoUs .container_cardItem{
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem {
 
   display: inline-block;
   width: 25%;
@@ -538,10 +585,10 @@ p                     .accordion-item>h2>button
 
 }
 
-.section_contactUs .container_contactUs .container_infoUs .container_cardItem img{
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem img {
 
   width: 90%;
-  max-width: 80px!important;
+  max-width: 80px !important;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -549,7 +596,7 @@ p                     .accordion-item>h2>button
 }
 
 
-.section_contactUs .container_contactUs .container_infoUs .container_cardItem p{
+.section_contactUs .container_contactUs .container_infoUs .container_cardItem p {
 
   font-size: 20px;
   font-weight: 400;
@@ -562,84 +609,224 @@ p                     .accordion-item>h2>button
 }
 
 
-/*Section Footer
+/*Section Footer*/
 
-  .section-footer
-  .container_footer
-  .container_txtFooter      .container_contactFooter
-  h3                        .contact_button
-  p                         i
-
-*/
-
-.section-footer{
+.section-footer {
 
   font-size: 0px;
   background-color: #414C62;
+  line-height: 1.2;
+  width: 100vw;
+  padding: 48px 23px;
+  
 
 }
 
-.section-footer .container_footer{
+@media (min-width: 1200px) {
+  
+  .section-footer {
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
 
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+  }
+  
+}
+
+
+.section-footer .container_footer {
+
+
+  justify-content: center;
   width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 0px;
 
 }
 
-.section-footer .container_footer .container_txtFooter{
 
-  display: inline-block;
-  width: 50%;
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer {
+
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+
+  }
+  
+}
+
+
+.section-footer .container_footer .container_txtFooter {
+
   color: white;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 20px auto;
+
 
 }
 
-.section-footer .container_footer .container_contactFooter{
 
-  display: inline-block;
-  width: 50%;
-  text-align: end;
-  font-family: 'Telefonica-Regular', sans-serif;
-  font-size: 24px;
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer .container_txtFooter {
 
+    color: white;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px;
+  
+  }
+  
 }
 
-.section-footer .container_footer .container_txtFooter h3{
+.section-footer .container_footer .container_txtFooter h3 {
 
   font-size: 24px;
-  text-align: left;
-  margin: 10px 0 0!important;
+  text-align: center;
+  margin: 10px 0 0 !important;
   font-family: 'Telefonica-ExtraLight';
   font-weight: 400;
   line-height: 1.1 !important;
 
+
 }
 
-.section-footer .container_footer .container_txtFooter p{
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer .container_txtFooter h3 {
+
+    font-size: 24px;
+    text-align: left;
+    margin: 10px 0 0 !important;
+    font-family: 'Telefonica-ExtraLight';
+    font-weight: 400;
+    line-height: 1.1 !important;
+  
+  }
+  
+}
+
+.section-footer .container_footer .container_txtFooter p {
 
   font-size: 15px;
-  text-align: left;
-  margin: 10px 0 0!important;
-  font-family: Telefonica-ExtraLight,sans-serif;
+  text-align: center;
+  margin: 10px 0 0 !important;
+  font-family: Telefonica-ExtraLight, sans-serif;
 
 }
 
-.section-footer .container_footer .container_contactFooter .contact_button{
+
+@media (min-width: 1200px) {
+  
+
+  .section-footer .container_footer .container_txtFooter p {
+
+    font-size: 15px;
+    text-align: left;
+    margin: 5px 0px 5px !important;
+    font-family: Telefonica-ExtraLight, sans-serif;
+  
+  }
+  
+}
+
+
+.section-footer .container_footer .container_contactFooter {
+
+  font-family: 'Telefonica-Regular', sans-serif;
+  width: 100%;
+  text-align: center;
+
+}
+
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer .container_contactFooter {
+
+    font-family: 'Telefonica-Regular', sans-serif;
+    display: inline-block;
+    width: 60%;
+    text-align: end;
+  
+  }
+  
+}
+
+
+.section-footer .container_footer .container_contactFooter .contact_button {
+
+  display: inline-block !important;
+  vertical-align: middle;
+  width: auto;
+
+}
+
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer .container_contactFooter .contact_button {
+
+    display: inline-block !important;
+    vertical-align: middle;
+    width: 91.66666667%;
+  
+  }
+  
+}
+
+.section-footer .container_footer .container_contactFooter .contact_button .button {
+
+  background-color: #00B5f0;
+  --bs-btn-padding-y: .25rem;
+  --bs-btn-padding-x: 4rem;
+  transition: 0.5s;
+
+}
+
+.section-footer .container_footer .container_contactFooter .contact_button .button:hover {
+
+  background-color: white;
+  color: #414C62;
+
+}
+
+.section-footer .container_footer .container_contactFooter .contact_button .button {
 
   color: #FFFF;
   font-family: 'Telefonica-Regular', sans-serif;
-  display: inline-block;
-  width: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
 
 }
 
-.section-footer .container_footer .container_contactFooter i{
+.section-footer .container_footer .container_contactFooter i {
 
+  font-size: 25px;
   color: white;
   display: inline-block;
-  width: 50%;
+  vertical-align: middle;
+  text-align: start;
+  width: auto;
+  margin: 0px 10px;
 
+  
 }
 
+@media (min-width: 1200px) {
+  
+  .section-footer .container_footer .container_contactFooter i {
+
+    text-align: end;
+    width: 8.33333333%;
+    margin: 0px 0px;
+  }
+  
+}
