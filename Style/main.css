@@ -287,7 +287,7 @@ table {
   justify-content: center;
   width: 90%;
   max-width: 1255px;
-  padding: 50px 10rem;
+  padding: 50px 3rem;
   flex-direction: column;
   margin: 0px auto;
 }
@@ -316,7 +316,7 @@ table {
 
 .container_banner .box p {
 
-  font-size: 45px;
+  font-size: 55px;
   font-family: 'Telefonica-Bold', sans-serif;
   color: white;
 
@@ -371,7 +371,7 @@ table {
 
 .Hero-slider .Hero-slider-container .Container_text {
 
-  text-align: start;
+  text-align: center;
   vertical-align: middle;
   align-content: center;
   max-width: 946px;
@@ -1351,11 +1351,6 @@ table {
 
 /*Modal Umbrella*/
 
-.button_modal {
-
-  
-
-}
 
 /*Modal header*/
 
