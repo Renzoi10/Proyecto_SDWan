@@ -379,8 +379,8 @@ table {
   align-content: center;
   max-width: 946px;
   margin: auto;
-  padding-top: 14px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 
 }
 
@@ -389,7 +389,7 @@ table {
   color: #00B5f0;
   font-size: 26px;
   font-weight: normal;
-  font-family: Telefonica-Light, sans-serif;
+  font-family: 'Telefonica-Light', sans-serif;
 
 }
 
@@ -467,7 +467,7 @@ table {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  width: 60%;
+  width: 65%;
 
 }
 
@@ -574,8 +574,8 @@ table {
 .Section_benefitsInfo .container_Info .info_content .list-group .list-group-item .container_text p {
 
   font-family: Telefonica-Light, sans-serif;
-  font-size: 20px;
-  color: #414C62;
+  font-size: 22px;
+  color: #6E7895;
   font-weight: 400;
 
 }
@@ -602,6 +602,7 @@ table {
   margin: 0 auto;
   max-width: 80%;
   position: relative;
+  padding: 35px 0px;
 
 }
 
@@ -649,11 +650,12 @@ table {
 
 .Section_advantage .container_advantage p {
 
-  font-size: 19px;
+  font-size: 22px;
   font-family: Telefonica-Light, sans-serif;
   margin: 8px 0px;
   padding-bottom: 20px;
   text-align: center;
+  color: #6E7895;
 
 }
 
@@ -667,7 +669,7 @@ table {
 
 }
 
-/*Section useles*/
+/*Section uses*/
 
 .Section_uses {
 
@@ -696,6 +698,7 @@ table {
 .Section_uses .uses_container {
 
   padding: 0 50px;
+  max-width: 1440px;
 
 }
 
@@ -738,11 +741,11 @@ table {
 
 .Section_uses .uses_container .container_usesInfo p {
 
-  font-size: 19px;
+  font-size: 22px;
   font-family: 'Telefonica-Light';
   padding: 8px 0px;
   text-align: start;
-  color: #414C62;
+  color: #6E7895;
 
 }
 
@@ -820,23 +823,47 @@ table {
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse {
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body {
 
-  font-size: 19px;
-  font-family: Telefonica-Light, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse p {
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body {
+
+  width: 75%;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .icon_body_accordion {
+
+  width: 160px;
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .icon_body_accordion .espcecial{
+
+
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+
+}
+
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body p {
 
   text-align: left;
+  color: #6E7895;
+  font-size: 22px;
+  font-family: 'Telefonica-Light';
 
 }
 
 
 @media (max-width: 426px) {
 
-  .Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse p {
+  .Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body p {
 
     font-size: 18px;
 
@@ -844,7 +871,7 @@ table {
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul {
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body ul {
 
   text-align: left;
   padding: 20px;
@@ -852,17 +879,18 @@ table {
 
 }
 
-.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul li {
+.Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body ul li {
 
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.3;
-  margin: 20px 0;
-
+  margin: 15px 0;
+  color: #6E7895;
+  font-family: 'Telefonica-Light';
 }
 
 @media (max-width: 426px) {
 
-  .Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse ul li {
+  .Section_uses .uses_container .container_accordion .accordion .accordion-item .accordion-collapse .accordion-body .text_accordion_body ul li {
 
     font-size: 14px;
     line-height: 1.4;
@@ -901,7 +929,8 @@ table {
 
 .section_contactUs .container_contactUs {
 
-  padding: 20px 80px;
+  padding: 20px 50px;
+  max-width: 1440px;
 
 }
 
@@ -965,9 +994,11 @@ table {
 .section_contactUs .container_contactUs .text_contactUs p {
 
   font-family: Telefonica-Regular, sans-serif;
-  font-size: 20px;
+  padding-bottom: 15px;
+  font-size: 22px;
   vertical-align: top;
   text-align: justify;
+  color: #6E7895;
 
 }
 
@@ -1479,12 +1510,22 @@ table {
 
   font-size: 0;
   margin: 0px auto;
-  max-width: 80%;
+  max-width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 35px 0px;
 
+}
+
+@media (max-width: 1980px) {
+
+  .modal_body {
+
+    max-width: 80%;
+    padding: 20px 0px;
+
+  }
 }
 
 @media (max-width: 426px) {
@@ -1647,7 +1688,7 @@ table {
 
   font-family: Telefonica-Light, sans-serif;
   font-size: 20px;
-  color: #414C62;
+  color: #6E7895;
   font-weight: 400;
 
 }
